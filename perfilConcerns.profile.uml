@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Profile xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_9v_84HqaEeK1gM_kVgXLQw" name="perfilConcerns" metaclassReference="_ClV7MHqbEeK1gM_kVgXLQw">
+<uml:Profile xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_9v_84HqaEeK1gM_kVgXLQw" name="perfilConcerns" metaclassReference="_ClV7MHqbEeK1gM_kVgXLQw _r2eLkBTiEeORY8N5zhv4gw">
   <eAnnotations xmi:id="_EgIM4HqbEeK1gM_kVgXLQw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_zcmaARTjEeORY8N5zhv4gw" name="perfilConcerns" nsURI="http:///schemas/perfilConcerns/_zcmaABTjEeORY8N5zhv4gw/17" nsPrefix="perfilConcerns">
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaAhTjEeORY8N5zhv4gw" name="Concern" abstract="true">
+        <eAnnotations xmi:id="_zcmaAxTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-WptMHqaEeK1gM_kVgXLQw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zcmaBBTjEeORY8N5zhv4gw" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_zcmaBhTjEeORY8N5zhv4gw" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/4.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaCBTjEeORY8N5zhv4gw" name="play" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaCRTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pkw50NmpEeKpzZi5SPat7w"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaCxTjEeORY8N5zhv4gw" name="persistence" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaDBTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ptY50BTPEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaDhTjEeORY8N5zhv4gw" name="exceptionhandling" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaDxTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_wz2mMBTPEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaERTjEeORY8N5zhv4gw" name="logging" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaEhTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_AfA3gBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaFBTjEeORY8N5zhv4gw" name="action" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaFRTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DPfbEBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaFxTjEeORY8N5zhv4gw" name="rule" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaGBTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_LNw5MBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaGhTjEeORY8N5zhv4gw" name="configuration" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaGxTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_OUBfgBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaHRTjEeORY8N5zhv4gw" name="service" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaHhTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_QiErcBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaIBTjEeORY8N5zhv4gw" name="save" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaIRTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ipmRgBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaIxTjEeORY8N5zhv4gw" name="bowling" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaJBTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_zJ0ikBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaJhTjEeORY8N5zhv4gw" name="pong" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaJxTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_047IsBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaKRTjEeORY8N5zhv4gw" name="brickles" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaKhTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4zW98BTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaLBTjEeORY8N5zhv4gw" name="movement" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaLRTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_7LcPoBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaLxTjEeORY8N5zhv4gw" name="collision" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaMBTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-Ux_IBTQEeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaMhTjEeORY8N5zhv4gw" name="pause" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaMxTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_BlapcBTREeOYorUb5NKqTw"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_zcmaNRTjEeORY8N5zhv4gw" name="ranking" eSuperTypes="_zcmaAhTjEeORY8N5zhv4gw">
+        <eAnnotations xmi:id="_zcmaNhTjEeORY8N5zhv4gw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_JC3nkBTTEeOYorUb5NKqTw"/>
+      </eClassifiers>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_M8wDMBTTEeOYorUb5NKqTw" name="perfilConcerns" nsURI="http:///schemas/perfilConcerns/_M8vcIBTTEeOYorUb5NKqTw/16" nsPrefix="perfilConcerns">
       <eClassifiers xmi:type="ecore:EClass" xmi:id="_M8wDMRTTEeOYorUb5NKqTw" name="Concern" abstract="true">
         <eAnnotations xmi:id="_M8wDMhTTEeOYorUb5NKqTw" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_-WptMHqaEeK1gM_kVgXLQw"/>
@@ -358,9 +417,15 @@
   <elementImport xmi:id="_ClV7MHqbEeK1gM_kVgXLQw" alias="Class">
     <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
   </elementImport>
+  <elementImport xmi:id="_r2eLkBTiEeORY8N5zhv4gw" alias="Property">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_-WptMHqaEeK1gM_kVgXLQw" name="Concern" isAbstract="true">
     <ownedAttribute xmi:id="_DFkTYHqbEeK1gM_kVgXLQw" name="base_Class" association="_DFk6cHqbEeK1gM_kVgXLQw">
       <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LG_BIBTjEeORY8N5zhv4gw" name="base_Property" association="_DrrGIBTjEeORY8N5zhv4gw">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Extension" xmi:id="_DFk6cHqbEeK1gM_kVgXLQw" name="E_Concern_Class1" memberEnd="_DFk6cXqbEeK1gM_kVgXLQw _DFkTYHqbEeK1gM_kVgXLQw">
@@ -413,5 +478,8 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Stereotype" xmi:id="_JC3nkBTTEeOYorUb5NKqTw" name="ranking">
     <generalization xmi:id="_KmTwQBTTEeOYorUb5NKqTw" general="_-WptMHqaEeK1gM_kVgXLQw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_DrrGIBTjEeORY8N5zhv4gw" name="E_Concern_Property" memberEnd="_LG_BIBTjEeORY8N5zhv4gw _nC2PEBTjEeORY8N5zhv4gw">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_nC2PEBTjEeORY8N5zhv4gw" type="_-WptMHqaEeK1gM_kVgXLQw" association="_DrrGIBTjEeORY8N5zhv4gw"/>
   </packagedElement>
 </uml:Profile>
