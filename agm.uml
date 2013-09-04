@@ -459,23 +459,6 @@
         <ownedOperation xmi:id="_8Pyb0BTAEeOYorUb5NKqTw" name="setMenu"/>
         <ownedOperation xmi:id="_927_0BTAEeOYorUb5NKqTw" name="getMenu"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_lD5HgBTBEeOYorUb5NKqTw" name="Match">
-        <ownedAttribute xmi:id="_sy4zgBTBEeOYorUb5NKqTw" name="numberOfMatches" visibility="private">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vJrrwBTBEeOYorUb5NKqTw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vJsS0BTBEeOYorUb5NKqTw" value="1"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_vJtg8BTBEeOYorUb5NKqTw">
-            <value xsi:nil="true"/>
-          </defaultValue>
-        </ownedAttribute>
-        <ownedOperation xmi:id="_re5cEBTBEeOYorUb5NKqTw" name="startMatch"/>
-        <ownedOperation xmi:id="_rtJ6gBTBEeOYorUb5NKqTw" name="endMatch"/>
-        <ownedOperation xmi:id="_sBPUIBTBEeOYorUb5NKqTw" name="getPartialScore"/>
-        <ownedOperation xmi:id="_Eg79MBTCEeOYorUb5NKqTw" name="getFinalScore"/>
-        <ownedOperation xmi:id="_EyJB8BTCEeOYorUb5NKqTw" name="setPartialScore"/>
-        <ownedOperation xmi:id="_FDCksBTCEeOYorUb5NKqTw" name="setPartialScore"/>
-        <ownedOperation xmi:id="_K_6LwBTCEeOYorUb5NKqTw" name="setFinalScore"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_l0X3UBTDEeOYorUb5NKqTw" name="" memberEnd="_l0X3URTDEeOYorUb5NKqTw _l0GKgBTDEeOYorUb5NKqTw" navigableOwnedEnd="_l0GKgBTDEeOYorUb5NKqTw">
         <ownedEnd xmi:id="_l0X3URTDEeOYorUb5NKqTw" name="" type="_Uo_ggBSvEeOYorUb5NKqTw" association="_l0X3UBTDEeOYorUb5NKqTw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l0X3UhTDEeOYorUb5NKqTw" value="1"/>
@@ -717,6 +700,23 @@
         <ownedOperation xmi:id="_w9TJABTCEeOYorUb5NKqTw" name="resetScore"/>
         <ownedOperation xmi:id="_xLsxYBTCEeOYorUb5NKqTw" name="incScore"/>
         <ownedOperation xmi:id="_xamwEBTCEeOYorUb5NKqTw" name="updateScoreRanking"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_lD5HgBTBEeOYorUb5NKqTw" name="Match">
+        <ownedAttribute xmi:id="_sy4zgBTBEeOYorUb5NKqTw" name="numberOfMatches" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vJrrwBTBEeOYorUb5NKqTw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vJsS0BTBEeOYorUb5NKqTw" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_vJtg8BTBEeOYorUb5NKqTw">
+            <value xsi:nil="true"/>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_re5cEBTBEeOYorUb5NKqTw" name="startMatch"/>
+        <ownedOperation xmi:id="_rtJ6gBTBEeOYorUb5NKqTw" name="endMatch"/>
+        <ownedOperation xmi:id="_sBPUIBTBEeOYorUb5NKqTw" name="getPartialScore"/>
+        <ownedOperation xmi:id="_Eg79MBTCEeOYorUb5NKqTw" name="getFinalScore"/>
+        <ownedOperation xmi:id="_EyJB8BTCEeOYorUb5NKqTw" name="setPartialScore"/>
+        <ownedOperation xmi:id="_FDCksBTCEeOYorUb5NKqTw" name="setPartialScore"/>
+        <ownedOperation xmi:id="_K_6LwBTCEeOYorUb5NKqTw" name="setFinalScore"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_2g84MBVZEeODAq4Tm5H6GQ" name="GameBoardGUI">
