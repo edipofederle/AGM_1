@@ -113,7 +113,60 @@
         <ownedOperation xmi:id="_ZsHHABStEeOYorUb5NKqTw" name="getGame"/>
         <ownedOperation xmi:id="_bCHQoBStEeOYorUb5NKqTw" name="saveScore"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_R38k4BViEeODAq4Tm5H6GQ" name="IGameMgt"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_R38k4BViEeODAq4Tm5H6GQ" name="IGameMgt">
+        <ownedOperation xmi:id="_4bTucBWNEeObs-pQrJ2skQ" name="addGame">
+          <ownedParameter xmi:id="_-GE44BWNEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_4ud7ABWNEeObs-pQrJ2skQ" name="remGame">
+          <ownedParameter xmi:id="_H7NyABWOEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_4-ZNYBWNEeObs-pQrJ2skQ" name="getGame">
+          <ownedParameter xmi:id="_LVL-gBWOEeObs-pQrJ2skQ" name="codeGame" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Mtcx8BWOEeObs-pQrJ2skQ" name="" type="_prZDoBSsEeOYorUb5NKqTw" isUnique="false" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_5M0q8BWNEeObs-pQrJ2skQ" name="play">
+          <ownedParameter xmi:id="_SnzQgBWOEeObs-pQrJ2skQ" name="codeGame" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_UhPeYBWOEeObs-pQrJ2skQ" name="match" type="_lD5HgBTBEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_WGchoBWOEeObs-pQrJ2skQ" name="exit">
+          <ownedParameter xmi:id="_ZJNvEBWOEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aA0sgBWOEeObs-pQrJ2skQ" name="saveGame">
+          <ownedParameter xmi:id="_f-9e4BWOEeObs-pQrJ2skQ" name="gameBoard" type="_xScE0BS9EeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_hyHekBWOEeObs-pQrJ2skQ" name="match" type="_lD5HgBTBEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_cXIckBWOEeObs-pQrJ2skQ" name="loadGame">
+          <ownedParameter xmi:id="_lVb0UBWOEeObs-pQrJ2skQ" name="game" type="_prZDoBSsEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_pNd10BWOEeObs-pQrJ2skQ" name="checkInstallation">
+          <ownedParameter xmi:id="_xnzk4BWOEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_zxE-gBWOEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_pcB2QBWOEeObs-pQrJ2skQ" name="uninstall">
+          <ownedParameter xmi:id="_6e_A8BWOEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_ps4VsBWOEeObs-pQrJ2skQ" name="install">
+          <ownedParameter xmi:id="_-AeKsBWOEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_P2tF4BViEeODAq4Tm5H6GQ" clientDependency="_mUVpMBVlEeODAq4Tm5H6GQ" name="GameMgr"/>
       <packagedElement xmi:type="uml:Realization" xmi:id="_mUVpMBVlEeODAq4Tm5H6GQ" name="Realization1" client="_P2tF4BViEeODAq4Tm5H6GQ" supplier="_R38k4BViEeODAq4Tm5H6GQ"/>
     </packagedElement>
@@ -673,8 +726,52 @@
         <ownedOperation xmi:id="_MhY9oBVnEeODAq4Tm5H6GQ" name="showRankingScores"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Realization" xmi:id="_ysjZgBVZEeODAq4Tm5H6GQ" name="Realization1" client="_HCoXQBVZEeODAq4Tm5H6GQ" supplier="_M10d4BVZEeODAq4Tm5H6GQ"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ukGrgBVbEeODAq4Tm5H6GQ" name="ISaveScore"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_X5BBYBVgEeODAq4Tm5H6GQ" name="IGameBoardData"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ukGrgBVbEeODAq4Tm5H6GQ" name="ISaveScore">
+        <ownedOperation xmi:id="_7x3XYBWJEeObs-pQrJ2skQ" name="getScore">
+          <ownedParameter xmi:id="_DG6SUBWKEeObs-pQrJ2skQ" name="" type="_bSsdwBTCEeOYorUb5NKqTw" isUnique="false" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_9liUcBWJEeObs-pQrJ2skQ" name="isGamePlayed">
+          <ownedParameter xmi:id="_Ozz-UBWKEeObs-pQrJ2skQ" name="gameBoard" type="_xScE0BS9EeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_R6A6QBWKEeObs-pQrJ2skQ" name="match" type="_lD5HgBTBEeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_USaVABWKEeObs-pQrJ2skQ" name="" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_91CwEBWJEeObs-pQrJ2skQ" name="saveScore">
+          <ownedParameter xmi:id="_npb0EBWKEeObs-pQrJ2skQ" name="game" type="_bSsdwBTCEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_-BssABWJEeObs-pQrJ2skQ" name="isARankingScore">
+          <ownedParameter xmi:id="_ypavsBWKEeObs-pQrJ2skQ" name="score" type="_bSsdwBTCEeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_MST1cBWLEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_-OX2EBWJEeObs-pQrJ2skQ" name="saveingInRanking">
+          <ownedParameter xmi:id="_UtD0MBWLEeObs-pQrJ2skQ" name="login" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_b_ya8BWLEeObs-pQrJ2skQ" name="game" type="_prZDoBSsEeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_jsiEMBWLEeObs-pQrJ2skQ" name="" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_-cGwEBWJEeObs-pQrJ2skQ" name="setDateRanking">
+          <ownedParameter xmi:id="_q3q1MBWLEeObs-pQrJ2skQ" name="login" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_vfMZ8BWLEeObs-pQrJ2skQ" name="game" type="_prZDoBSsEeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_zdmJMBWLEeObs-pQrJ2skQ" name="" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_X5BBYBVgEeODAq4Tm5H6GQ" name="IGameBoardData">
+        <ownedOperation xmi:id="_H00hABWMEeObs-pQrJ2skQ" name="getGameBoard">
+          <ownedParameter xmi:id="_Lo9hABWMEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_bSsdwBTCEeOYorUb5NKqTw" name="Score">
         <ownedAttribute xmi:id="_hQbngBTCEeOYorUb5NKqTw" name="scoreRankingBowling" visibility="public">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_heQoIBTCEeOYorUb5NKqTw" value="1"/>
@@ -751,19 +848,73 @@
         </ownedOperation>
         <ownedOperation xmi:id="_vm0PQBVnEeODAq4Tm5H6GQ" name="startGameBoard"/>
         <ownedOperation xmi:id="_v3Op0BVnEeODAq4Tm5H6GQ" name="endMatch"/>
+        <ownedOperation xmi:id="_wkfYoBWMEeObs-pQrJ2skQ" name="setPartialScore">
+          <ownedParameter xmi:id="_z2y24BWMEeObs-pQrJ2skQ" name="score" type="_bSsdwBTCEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_1qBvEBWMEeObs-pQrJ2skQ" name="getPartialScore">
+          <ownedParameter xmi:id="_5cCoIBWMEeObs-pQrJ2skQ" name="match" type="_lD5HgBTBEeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_AUyBkBWNEeObs-pQrJ2skQ" name="" type="_bSsdwBTCEeOYorUb5NKqTw" isUnique="false" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_DPjwoBWNEeObs-pQrJ2skQ" name="getFinalScore">
+          <ownedParameter xmi:id="_Loi00BWNEeObs-pQrJ2skQ" name="match" type="_lD5HgBTBEeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_P0B90BWNEeObs-pQrJ2skQ" name="" type="_bSsdwBTCEeOYorUb5NKqTw" isUnique="false" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RGtGoBWNEeObs-pQrJ2skQ" name="setFinalScore">
+          <ownedParameter xmi:id="_W_eQ0BWNEeObs-pQrJ2skQ" name="match" type="_lD5HgBTBEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_YNaqoBWNEeObs-pQrJ2skQ" name="saveScore">
+          <ownedParameter xmi:id="_cr2k0BWNEeObs-pQrJ2skQ" name="score" type="_bSsdwBTCEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_eFFooBWNEeObs-pQrJ2skQ" name="showScore">
+          <ownedParameter xmi:id="_g7J20BWNEeObs-pQrJ2skQ" name="game" type="_prZDoBSsEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Realization" xmi:id="_5EZvkBVdEeODAq4Tm5H6GQ" name="Realization1" client="_JmvLYBVcEeODAq4Tm5H6GQ" supplier="_0bg44BVdEeODAq4Tm5H6GQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_9DESoBVfEeODAq4Tm5H6GQ" name="Dependency1" client="_JmvLYBVcEeODAq4Tm5H6GQ" supplier="_Y4SNYBVdEeODAq4Tm5H6GQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_-c0S4BSmEeOYorUb5NKqTw" name="AnimationLoopMgr">
-      <packagedElement xmi:type="uml:Class" xmi:id="_4kumcBVcEeODAq4Tm5H6GQ" clientDependency="_kTLjYBVdEeODAq4Tm5H6GQ __fkxUBVfEeODAq4Tm5H6GQ" name="AnimationLoppMgr"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_EIAcYBVdEeODAq4Tm5H6GQ" name="IAnimationLoopMgt"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4kumcBVcEeODAq4Tm5H6GQ" clientDependency="_kTLjYBVdEeODAq4Tm5H6GQ __fkxUBVfEeODAq4Tm5H6GQ" name="AnimationLoppMgr">
+        <ownedOperation xmi:id="_9eXw8BWTEeObs-pQrJ2skQ" name="startAnimation">
+          <ownedParameter xmi:id="_EQF8YBWUEeObs-pQrJ2skQ" name="codeGame" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_9rfm8BWTEeObs-pQrJ2skQ" name="stopAnimation">
+          <ownedParameter xmi:id="_I_pbwBWUEeObs-pQrJ2skQ" name="codeGame" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_EIAcYBVdEeODAq4Tm5H6GQ" name="IAnimationLoopMgt">
+        <ownedOperation xmi:id="_pkzlgBWTEeObs-pQrJ2skQ" name="startAnimation">
+          <ownedParameter xmi:id="_w2bZABWTEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_pwfREBWTEeObs-pQrJ2skQ" name="stopAnimation">
+          <ownedParameter xmi:id="_1Ei_QBWTEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
       <packagedElement xmi:type="uml:Realization" xmi:id="_kTLjYBVdEeODAq4Tm5H6GQ" name="Realization1" client="_4kumcBVcEeODAq4Tm5H6GQ" supplier="_EIAcYBVdEeODAq4Tm5H6GQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="__fkxUBVfEeODAq4Tm5H6GQ" name="Dependency1" client="_4kumcBVcEeODAq4Tm5H6GQ" supplier="_Y4SNYBVdEeODAq4Tm5H6GQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_CbqHABSnEeOYorUb5NKqTw" name="InitializeMgr">
-      <packagedElement xmi:type="uml:Class" xmi:id="_T739wBVdEeODAq4Tm5H6GQ" clientDependency="_jIX9IBVdEeODAq4Tm5H6GQ" name="InitializeMgr"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Y4SNYBVdEeODAq4Tm5H6GQ" name="IInitializeMgr"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_T739wBVdEeODAq4Tm5H6GQ" clientDependency="_jIX9IBVdEeODAq4Tm5H6GQ" name="InitializeMgr">
+        <ownedOperation xmi:id="_fbl-ABWMEeObs-pQrJ2skQ" name="initialize">
+          <ownedParameter xmi:id="_i_N1wBWMEeObs-pQrJ2skQ" name="gameCode">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y4SNYBVdEeODAq4Tm5H6GQ" name="InitializationMgr">
+        <ownedOperation xmi:id="_SmmBgBWMEeObs-pQrJ2skQ" name="initialize">
+          <ownedParameter xmi:id="_b70EcBWMEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
       <packagedElement xmi:type="uml:Realization" xmi:id="_jIX9IBVdEeODAq4Tm5H6GQ" name="Realization1" client="_T739wBVdEeODAq4Tm5H6GQ" supplier="_Y4SNYBVdEeODAq4Tm5H6GQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_tZi_IBSmEeOYorUb5NKqTw" name="GameCtrl">
@@ -771,13 +922,105 @@
       <packagedElement xmi:type="uml:Dependency" xmi:id="__Rx7ABVhEeODAq4Tm5H6GQ" name="Dependency1" client="_R-qtYBVhEeODAq4Tm5H6GQ" supplier="_ukGrgBVbEeODAq4Tm5H6GQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_DNjNABViEeODAq4Tm5H6GQ" name="Dependency2" client="_R-qtYBVhEeODAq4Tm5H6GQ" supplier="_X5BBYBVgEeODAq4Tm5H6GQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_stpcABViEeODAq4Tm5H6GQ" name="Dependency3" client="_R-qtYBVhEeODAq4Tm5H6GQ" supplier="_R38k4BViEeODAq4Tm5H6GQ"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_4L4Z4BViEeODAq4Tm5H6GQ" name="IPlayBrickles"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_-VLTYBViEeODAq4Tm5H6GQ" name="IPlayPong"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_CacfoBVjEeODAq4Tm5H6GQ" name="IInstallGame"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Gzx3YBVjEeODAq4Tm5H6GQ" name="IUninstallgame"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Lda8ABVjEeODAq4Tm5H6GQ" name="IExitGame"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_McPUsBVjEeODAq4Tm5H6GQ" name="ISaveGame"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_82VhYBVjEeODAq4Tm5H6GQ" name="IPlayBowling"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4L4Z4BViEeODAq4Tm5H6GQ" name="IPlayBrickles">
+        <ownedOperation xmi:id="_1IWMEBWREeObs-pQrJ2skQ" name="checkinstallation">
+          <ownedParameter xmi:id="_CWK4QBWSEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_1YqgABWREeObs-pQrJ2skQ" name="play"/>
+        <ownedOperation xmi:id="_1lmIwBWREeObs-pQrJ2skQ" name="setDatePlayed">
+          <ownedComment xmi:id="_7X6FoBWREeObs-pQrJ2skQ">
+            <body>PongGame,BricklesGame,BowlingGame</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_G2mWgBWSEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-VLTYBViEeODAq4Tm5H6GQ" name="IPlayPong">
+        <ownedOperation xmi:id="_TrNG4BWREeObs-pQrJ2skQ" name="checkInstallation">
+          <ownedParameter xmi:id="_ck3PMBWREeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_UkIS8BWREeObs-pQrJ2skQ" name="play"/>
+        <ownedOperation xmi:id="_U-X-8BWREeObs-pQrJ2skQ" name="setDatePlayed">
+          <ownedParameter xmi:id="_sDSsEBWREeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CacfoBVjEeODAq4Tm5H6GQ" name="IInstallGame">
+        <ownedOperation xmi:id="_NFzLEBWPEeObs-pQrJ2skQ" name="checkGame">
+          <ownedParameter xmi:id="_RWb50BWPEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VFx5YBWPEeObs-pQrJ2skQ" name="" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_NXCFABWPEeObs-pQrJ2skQ" name="install">
+          <ownedParameter xmi:id="_Z_6REBWPEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Gzx3YBVjEeODAq4Tm5H6GQ" name="IUninstallgame">
+        <ownedOperation xmi:id="_dbUA8BWPEeObs-pQrJ2skQ" name="checkGame">
+          <ownedParameter xmi:id="_aYt9MBWQEeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_dNkqcBWQEeObs-pQrJ2skQ" name="" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_dr9FABWPEeObs-pQrJ2skQ" name="uninstall">
+          <ownedParameter xmi:id="_QQyOcBWREeObs-pQrJ2skQ" name="gameCode" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Lda8ABVjEeODAq4Tm5H6GQ" name="IExitGame">
+        <ownedOperation xmi:id="_RTYB8BWTEeObs-pQrJ2skQ" name="exit"/>
+        <ownedOperation xmi:id="_Rnl-cBWTEeObs-pQrJ2skQ" name="checkGameBoard">
+          <ownedParameter xmi:id="_W_nzEBWTEeObs-pQrJ2skQ" name="" type="_xScE0BS9EeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_mTCSwBWTEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_McPUsBVjEeODAq4Tm5H6GQ" name="ISaveGame">
+        <ownedOperation xmi:id="_sEty8BWSEeObs-pQrJ2skQ" name="checkGameBoard">
+          <ownedParameter xmi:id="_zvfGQBWSEeObs-pQrJ2skQ" name="gameBoard" type="_xScE0BS9EeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_11oTYBWSEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_sUIvABWSEeObs-pQrJ2skQ" name="checkMatch">
+          <ownedParameter xmi:id="__MhKQBWSEeObs-pQrJ2skQ" name="match" type="_lD5HgBTBEeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_A9198BWTEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_shkHABWSEeObs-pQrJ2skQ" name="saveGame">
+          <ownedParameter xmi:id="_JZJWUBWTEeObs-pQrJ2skQ" name="gameBoard" type="_xScE0BS9EeOYorUb5NKqTw" isUnique="false"/>
+          <ownedParameter xmi:id="_LZfdcBWTEeObs-pQrJ2skQ" name="match" type="_lD5HgBTBEeOYorUb5NKqTw" isUnique="false"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_82VhYBVjEeODAq4Tm5H6GQ" name="IPlayBowling">
+        <ownedOperation xmi:id="_aUKicBWSEeObs-pQrJ2skQ" name="checkInstallation">
+          <ownedParameter xmi:id="_hbyscBWSEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_aiq4gBWSEeObs-pQrJ2skQ" name="play"/>
+        <ownedOperation xmi:id="_azEsABWSEeObs-pQrJ2skQ" name="setDatePlayed">
+          <ownedParameter xmi:id="_pLrJQBWSEeObs-pQrJ2skQ" name="" isUnique="false" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_pVLO4BVjEeODAq4Tm5H6GQ" name="PlayGameGUI">
       <packagedElement xmi:type="uml:Class" xmi:id="_sEps4BVjEeODAq4Tm5H6GQ" clientDependency="_-eUy4BVjEeODAq4Tm5H6GQ __n_JoBVjEeODAq4Tm5H6GQ _B1BB4BVkEeODAq4Tm5H6GQ" name="PlayGameGUI"/>
